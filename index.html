@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de IMC</title>
+  <title>HealthMath</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="circles">
-    <div class="circle green top-left"></div>
-    <div class="circle white top-left-overlap"></div>
-    <div class="circle green bottom-right"></div>
-    <div class="circle white bottom-right-overlap"></div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+    <div class="circle circle6"></div>
   </div>
 
   <div class="container">
@@ -23,21 +26,13 @@
         <label for="nome">Nome do paciente</label>
         <input type="text" id="nome" required>
 
-        <label for="genero">Gênero</label>
-        <select id="genero" required>
-          <option value="" disabled selected>Selecione</option>
-          <option value="feminino">Feminino</option>
-          <option value="masculino">Masculino</option>
-          <option value="outro">Outro</option>
-        </select>
-
         <label for="altura">Altura (m)</label>
         <input type="number" id="altura" step="0.01" required>
 
         <label for="peso">Peso (kg)</label>
         <input type="number" id="peso" step="0.1" required>
 
-        <button type="submit">Calcular IMC</button>
+      <button type="submit">Calcular IMC</button>
       </form>
 
       <div id="resultado"></div>
