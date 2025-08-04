@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    z-index: 3;
+  }
+  
+  header, footer {
+    height: 60px;
+    background-color: #00e0d6;
+  }
+  
+  main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  button {
+    background-color: #00e0d6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00c3bd;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  header, main, footer {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .circles {
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0.6;
+    z-index: 1; 
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  /* Topo esquerdo - círculo branco menor */
+  .circle.white.top-left-overlap {
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: -75px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+  
+  /* Inferior direito - círculo verde médio */
+  .circle.green.bottom-right {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -100px;
+    background-color: #00e0d6;
+    z-index: 1;
+  }
+  
+  /* Inferior direito - círculo branco menor */
+  .circle.white.bottom-right-overlap {
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+    right: -60px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+  
+  
